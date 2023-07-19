@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>País</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Em qual país você vive? <input type="text" name="textnac" id="textnac"  >
+    <input type="button" value="Confirmar" onclick="enviar()">
+    <div id="res">
+
+    </div>
+ 
+    <script>
+     function enviar(){
+        var valor = window.document.querySelector("input#textnac")
+        var res = window.document.querySelector("div#res")
+        var txt = Text(valor.value)
+        res.innerHTML =  `<p>Você vive em ${txt}!</p>`
+        if (txt != 'Brasil') {
+            res.innerHTML += '<p>Você é estrangeiro!</p>'
+        } else {
+            res.innerHTML += '<p>Você é brasileiro!</p>'
+        }
+     }
+    </script>
+</body>
+</html>
