@@ -18,9 +18,9 @@
      function enviar(){
         var valor = window.document.querySelector("input#textnac")
         var res = window.document.querySelector("div#res")
-        var txt = Text(valor.value)
-        res.innerHTML =  `<p>Você vive em ${txt}!</p>`
-        if (txt != 'Brasil') {
+        
+        res.innerHTML = `<p>Você vive em ${res}!</p>`
+        if (valor != 'Brasil') {
             res.innerHTML += '<p>Você é estrangeiro!</p>'
         } else {
             res.innerHTML += '<p>Você é brasileiro!</p>'
