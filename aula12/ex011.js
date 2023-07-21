@@ -7,3 +7,14 @@ if (idade < 16) {
 } else {
     console.log ('Voto obrigatório.')
 }
+
+
+var gym = 80
+console.log(`Você tem ${gym} Kg`)
+if (gym <= 70) {
+    console.log('Você é frango')
+} else if (gym <= 75) {
+    console.log(`Você é um galizé`)
+} else {
+    console.log('Parabéns, você é um monstro!')
+}

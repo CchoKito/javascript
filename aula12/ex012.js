@@ -8,3 +8,15 @@ if (hora < 12) {
 } else {
     console.log('Boa Noite!')
 }
+
+
+var agoras = new Date()
+var horas = agoras.getHours()
+console.log(`Agora são exatamente ${hora} horas.`)
+if (horas < 12) {
+    console.log('Acorda vagabundo!')
+} else if  (horas <= 18) {
+    console.log('Vai trabalhar vagabundo!')
+} else {
+    console.log('Vai dormir vagabundo')
+}
