@@ -6,16 +6,27 @@
     <title>Modelo de Exercício</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="start()">
     <header>
-        <h1>Título</h1>
+        <h1>Contagem</h1>
     </header>
     <section>
-        <div>
-            Testando...
+        <div id="dados">
+            <p>Inicio:
+                <input type="number" name="inicio" id="txti">
+            </p>
+            <p>Fim:
+                <input type="number" name="fim" id="txtf">
+            </p>
+            <p>Passo:
+                <input type="number" name="passo" id="txtp">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
         </div>
-        <div>
-            Olá!
+        <div id="res">
+            Preparando a contagem...
         </div>
     </section>
     <footer>
