@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 body {
-    background: rgb(107, 107, 241);
+    background-image: linear-gradient( to right, #5A636A , #2D4A53 , #0D1F23 );
     font: normal 15pt Arial;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header {
@@ -8,13 +11,23 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+}
+
 section {
-    background: white;
+    background: rgba(255, 255, 255, 0.178);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 10px rgba(196, 196, 196, 0.301);
+}
+
+section div p {
+    color: white;
 }
 
 footer {
