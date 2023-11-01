@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS with Numbers</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button onclick="soma()">
+        <p>Iniciar a soma</p>
+    </button>
+    <p id="resultado">O resultado vem aqui...</p>
+
+    <script>
+        function soma() {
+            let n1 = Number(window.prompt('Digite um número: '))
+            let n2 = Number(window.prompt('Digite um outro número: '))
+            // soma = n1 + n2
+
+            let res = window.document.getElementById('resultado')
+            res.innerHTML= `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${n1 + n2}</strong>!</p>`
+        }
+    </script>
+    
+</body>
+</html>

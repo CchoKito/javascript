@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS with Numbers</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="calcular()">
+        Clique para calcular
+    </button>
+    <section>
+        <p id="resultado">O resultado vem aqui...</p>
+    </section>
+
+    <script>
+        window.alert('Seja muito bem-vindo(a) ao meu site!')
+
+        function calcular() {
+            let num = Number(window.prompt('Digite um número: '))
+            let res = window.document.getElementById('resultado')
+
+            res.innerHTML = `<p>O dobro de ${num} é ${num*2} e metade é ${num/2}!</p>`
+        }
+
+    </script>
+    
+</body>
+</html>
